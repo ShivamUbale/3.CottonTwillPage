@@ -18,7 +18,7 @@ html, body{
     align-items: flex-end;
     /* justify-content: space-between; */
     padding: 70px 150px 0 90px;
-    gap: 170px;
+    gap: 160px;
     
 }
 
@@ -33,16 +33,16 @@ html, body{
 }
 
 #left h1{
-    font-size: 8.5vw;
+    font-size: 9.5vw;
     font-weight: 360;
-    line-height: 8vw;
+    line-height: 9vw;
     letter-spacing: -2px;
     /* background-color: aquamarine; */
 }
 
 
 #left-bottom{
-    height: 40%;
+    height: 44%;
     width: 100%;
     padding: 30px 0px;
     /* background-color: crimson; */
@@ -89,10 +89,11 @@ html, body{
 }
 
 #left p{
-    font-size: 20px;
+    font-size: 1.3vw;
     width: 70%;
     color: #444;
-    line-height: 25px;
+    line-height: 2vw;
+    font-weight: 500;
 }
 
 
@@ -101,7 +102,6 @@ html, body{
     width: 35%;
     /* background-color:darkmagenta; */
     position: relative;
-    
 }
 
 #right-top{
@@ -167,4 +167,171 @@ html, body{
     bottom: 0;
     rotate: -90deg;
     transform-origin: top left;
+}
+
+
+@media (max-width: 600px) {
+    #main{
+        height: 100%;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 30px 40px 30px 20px;
+        gap: 10px;
+        
+    }
+
+    #left{
+        height: fit-content;
+        width: 100%;
+        /* background-color: blueviolet; */
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    
+    #left h1{
+        font-size: 22.5vw;
+        font-weight: 360;
+        line-height: 20vw;
+        letter-spacing: -2px;
+        /* background-color: aquamarine; */
+        margin-bottom: 15%;
+    }
+    
+    
+    #left-bottom{
+        height: fit-content;
+        width: 100%;
+        padding: 10px 0px;
+        /* background-color: rgb(31, 213, 24); */
+    }
+    
+    #color{
+        width: fit-content;
+        /* background-color: blue; */
+        padding: 5px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    
+    #color h5{
+        font-size: 10px;
+        margin-right: 15px;
+        font-weight: 500;
+        color: #444;
+    }
+    
+    #color1{
+        height: 12px;
+        width: 12px;
+        background-color: #7B6651;
+        border-radius: 50%;
+        margin-right: 4px;
+    }
+    
+    #color2{
+        height: 12px;
+        width: 12px;
+        background-color: #353331;
+        border-radius: 50%;
+    }
+    
+    #left h2{
+        margin-top: 20px;
+        font-size: 4vw;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    #left p{
+        font-size: 3.3vw;
+        width: 85%;
+        color: #444;
+        line-height: 4vw;
+        font-weight: 600;
+    }
+
+    #right{
+        height: 100%;
+        width: 100%;
+        /* background-color:darkmagenta; */
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    
+    #right-top{
+        height: 10%;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+    
+    #right-top h4{
+        font-size: 4vw;
+        font-weight: 500;
+        margin: 10px auto 0px 60px;
+    }
+    
+    #right-top h5{
+        font-size: 3vw;
+        font-weight: 900;
+        margin: 10px 0px 0px auto;
+    }
+    
+    #right-top h5 i{
+        color: gold;
+    }
+    
+    
+    #right img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 90%;
+        width: 80%;
+        /* object-fit: cover;
+         */
+    }
+    
+    #black-circle{
+        height: 20vw;
+        width: 20vw;
+        background-color: #222222;
+        color:white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -10%;
+        right: -10%;
+    }
+    
+    #black-circle h5{
+        font-size: 3vw;
+        font-weight: 400;
+    }
+    
+    #rotate{
+        font-size: 7vw;
+        position: absolute;
+        /* left: -15%;
+        bottom: 20%; */
+        left: 0;
+        bottom: 25%;
+        rotate: -90deg;
+        transform-origin: top left;
+    }
+    
 }
